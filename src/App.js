@@ -9,6 +9,9 @@ import AddLogModal from "./component/logs/addLogModal";
 import EditLogModal from "./component/logs/editLogModal";
 import AddTechModal from "./component/techs/addTechModal";
 import TechListModal from "./component/techs/techListModal";
+import {Provider} from 'react-redux'
+import store from "./store";
+
 
 
 const App = () => {
@@ -17,6 +20,8 @@ const App = () => {
         M.AutoInit()
     })
     return (
+        <Provider store={store}>
+
         <Fragment>
             <SearchBar/>
             <div className="container">
@@ -28,6 +33,7 @@ const App = () => {
                 <Logs/>
             </div>
         </Fragment>
+        </Provider>
     );
 };
 
