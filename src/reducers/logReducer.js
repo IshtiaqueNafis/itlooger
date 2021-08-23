@@ -54,6 +54,7 @@ export default (state = initalState, action) => { // this is the default state.
             return {
                 ...state,
                 current: action.payload
+
             }
 
         case CLEAR_CURRENT:
