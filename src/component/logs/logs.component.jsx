@@ -34,6 +34,6 @@ Logs.propTypes = {
 }
 const mapStateToProps = state => ({
     log: state.log, // state .log gets all the log proeprty from the log Reducer.
-    getLogs: PropTypes.func.isRequired,
+
 })
 export default connect(mapStateToProps, {getLogs})(Logs);
